@@ -5,8 +5,6 @@ jobs: # basic units of work in a run
       - image: alpine:latest
         environment:
           TST_VAR: "container"
-    environment:
-      - TST_VAR: "job"
     steps:
       - checkout
       - run:

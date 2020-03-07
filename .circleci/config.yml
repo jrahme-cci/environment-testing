@@ -1,6 +1,6 @@
 version: 2  # use CircleCI 2.0
 jobs: # basic units of work in a run
-  build:
+  test_1:
     docker:
       - image: alpine:latest
     steps:

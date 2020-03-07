@@ -3,8 +3,6 @@ jobs: # basic units of work in a run
   build:
     docker:
       - image: alpine:latest
-        environment:
-          TST_VAR: "container"
     steps:
       - checkout
       - run:

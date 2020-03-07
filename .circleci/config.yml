@@ -11,8 +11,6 @@ jobs: # basic units of work in a run
       - checkout
       - run:
           name: "custom vairables"
-          environment:
-            TST_VAR: "step"
           command: |
             echo 'export TST_VAR="shell"' >> $BASH_ENV
             echo $TST_VAR

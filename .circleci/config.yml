@@ -10,6 +10,7 @@ jobs: # basic units of work in a run
           command: |
             echo 'export TST_VAR="shell"' >> $BASH_ENV
             echo $BASH_ENV
+            source $BASH_ENV
             echo $TST_VAR
 
 

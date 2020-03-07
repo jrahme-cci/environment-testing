@@ -1,0 +1,20 @@
+version: 2  # use CircleCI 2.0
+jobs: # basic units of work in a run
+  test_1:
+    docker:
+      - image: alpine:latest
+        environment:
+          TST_VAR: "container"
+    environment:
+      - TST_VAR: "job"
+    steps:
+      - checkout
+      - run:
+          name: "custom vairables"
+          environment:
+            TST_VAR: "step"
+          command: |
+            echo 'export TST_VAR="shell"' >> $BASH_ENV
+            echo $TST_VAR
+
+

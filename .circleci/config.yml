@@ -5,9 +5,9 @@ jobs: # basic units of work in a run
       - image: alpine:latest
         environment:
           TST_VAR: "container"
-          OTHER_VAR: {{ env.TACO_FLAVOUR }}
     environment:
       - TST_VAR: "job"
+        OTHER_VAR: {{ env.TACO_FLAVOUR }}
     steps:
       - checkout
       - run:

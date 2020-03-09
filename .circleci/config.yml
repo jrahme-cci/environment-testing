@@ -19,5 +19,6 @@ jobs: # basic units of work in a run
             source $BASH_ENV
             echo $TST_VAR
             echo $OTHER_VAR
+            echo $TACO_FLAVOUR
 
 

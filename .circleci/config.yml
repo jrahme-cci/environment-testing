@@ -5,7 +5,7 @@ jobs: # basic units of work in a run
       - image: alpine:latest
         environment:
           TST_VAR: "container"
-          OTHER_VAR: "$TACO_FLAVOUR"
+          OTHER_VAR: ${TACO_FLAVOUR}
     environment:
       - TST_VAR: "job"
     steps:
